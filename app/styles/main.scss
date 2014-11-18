@@ -1,0 +1,103 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$border-color: rgb(233,233,233);
+$basic-text: rgb(20,40,52);
+$blue: rgb(33,144,228);
+
+
+.user-info {
+
+  height:180px;
+  margin-top: 20px;
+  padding: 25px 20px;
+  border: 2px solid $border-color;
+  border-radius: 8px;
+  max-width: 400px;
+
+  .user-img {
+    float:left;
+
+    img {
+      width: 130px;
+      border: 2px solid $border-color;
+      border-radius: 8px;
+    }
+
+  }
+  
+  .user-data {
+    float:left;
+    padding-left: 20px;
+    padding-top: 4px;
+    width: 190px;
+    color: $basic-text;
+    font-size: 14px;
+
+    input {
+      margin-bottom: 2px;
+      padding: 4px;
+      border: none;
+      border-radius: 4px;
+      max-width: 140px;
+    } 
+
+    input:focus {
+      outline: 1px solid $blue;
+    }
+
+    .username {
+      color: $blue;
+      font-weight: bold;
+      padding-left: 0px;
+    }
+
+    .username:focus {
+      padding-left: 4px;
+    }
+
+    .twitter-icon {
+      width: 15px;
+    }
+
+  }
+
+}
+
+
+::-webkit-input-placeholder {
+   color: $basic-text;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $basic-text; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $basic-text; 
+}
+
+:-ms-input-placeholder {  
+   color: $basic-text; 
+}
+
+
+.username::-webkit-input-placeholder {
+   color: $blue;
+}
+
+.username:-moz-placeholder { /* Firefox 18- */
+   color: $blue; 
+}
+
+.username::-moz-placeholder {  /* Firefox 19+ */
+   color: $blue;
+}
+
+.username:-ms-input-placeholder {  
+   color: $blue;
+}
+
+
