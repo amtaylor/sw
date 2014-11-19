@@ -30,6 +30,7 @@ module.exports = function(config) {
       'test/mock/**/*.js',
       'test/spec/**/*.js'
     ],
+  
 
     // list of files / patterns to exclude
     exclude: [],
@@ -45,8 +46,9 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
+    
     browsers: [
-      'PhantomJS'
+      //'PhantomJS'
     ],
 
     // Which plugins to enable
@@ -57,7 +59,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false,
+    singleRun: true,
 
     colors: true,
 
